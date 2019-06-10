@@ -1,0 +1,64 @@
+.navbar{
+  height: 90px;
+  width: 80%;
+  line-height: 90px;
+  border-bottom: 1px solid $coloreprincipale_Testi;
+
+  &_left{
+    float: left;
+    a{
+      margin-right: 5px;
+      font-size: 22px;
+    }
+  }
+  &_right{
+    float: right;
+    a{
+      margin-right: 25px;
+      font-size: 16px;
+    }
+    #signUp{
+      padding: 0 10px;
+      height: 35px;
+      font-size: 16px;
+      border-radius: 7px;
+      color: $coloreprincipale_Testi;
+      background-color: white;
+
+      &:hover{
+        color: white;
+        background-color: $colorehover_Testi;
+        border: 1px solid $colorehover_Testi;
+      }
+    }
+  }
+}
+.navbar .navbar_right,.navbar_left > a{
+   text-decoration: none;
+   font-weight: 600;
+   &:hover{
+     color: $colorehover_Testi;
+   }
+}
+.dropdown{
+  position: relative;
+  height: 90px;
+
+  &_menu{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100px;
+    box-shadow: 1px 1px 2px;
+    z-index: 1;
+    line-height: 30px;
+    border-radius: 7px;
+    padding: 0 10px;
+
+    ul{
+      list-style-type: none;
+    }
+  }
+
+}
