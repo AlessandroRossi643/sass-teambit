@@ -3,62 +3,61 @@
   width: 80%;
   line-height: 90px;
   border-bottom: 1px solid $coloreprincipale_Testi;
+  a{
+    color: $coloreprincipale_Testi;
+    text-decoration: none;
+
+    &:hover{
+      color: $colorehover_Testi;
+    }
+  }
+
 
   &_left{
     float: left;
     a{
-      margin-right: 5px;
-      font-size: 22px;
+      font-size: 22px
     }
   }
   &_right{
     float: right;
+
     a{
-      margin-right: 25px;
-      font-size: 16px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    }
+    .menu_item{
+      display: inline-block;
+      position: relative;
+      margin: 0 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+      .dropdown_menu{
+        position: absolute;
+        border-radius: 7px;
+        border: 1px solid $coloreprincipale_Testi;
+        line-height: 30px;
+        padding: 5px 10px;
+        top: 70px;
+        z-index: 2;
+        display: none;
+      }
     }
     #signUp{
       padding: 0 10px;
       height: 35px;
       font-size: 16px;
       border-radius: 7px;
-      color: $coloreprincipale_Testi;
+      color: $colorehover_Testi;
       background-color: white;
+      border: 1px solid $colorehover_Testi;
+      display: inline-block;
 
       &:hover{
         color: white;
         background-color: $colorehover_Testi;
-        border: 1px solid $colorehover_Testi;
       }
     }
   }
-}
-.navbar .navbar_right,.navbar_left > a{
-   text-decoration: none;
-   font-weight: 600;
-   &:hover{
-     color: $colorehover_Testi;
-   }
-}
-.dropdown{
-  position: relative;
-  height: 90px;
-
-  &_menu{
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100px;
-    box-shadow: 1px 1px 2px;
-    z-index: 1;
-    line-height: 30px;
-    border-radius: 7px;
-    padding: 0 10px;
-
-    ul{
-      list-style-type: none;
-    }
-  }
-
-}

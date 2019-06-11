@@ -1,12 +1,10 @@
 var $=require('jquery');
-
 $(document).ready(function(){
-  $('.dropdown').mouseenter(function(){
+  $('.menu_item').mouseenter(function(){
     $(this).children('.dropdown_menu').toggle();
   });
 
-  $('.dropdown').mouseleave(function(){
+  $('.menu_item').mouseleave(function(){
     $(this).children('.dropdown_menu').toggle();
   });
-
 });
