@@ -17,6 +17,13 @@ header {
   color: #58402c;
 }
 
+footer {
+  max-width: 100%;
+  height: 550px;
+  color: #58402c;
+  padding: 50px 0;
+}
+
 .navbar {
   height: 90px;
   width: 80%;
@@ -24,8 +31,12 @@ header {
   border-bottom: 1px solid #58402c;
 }
 
+.navbar img {
+  height: 50%;
+  transform: translate(-50%);
+}
+
 .navbar a {
-  color: #58402c;
   text-decoration: none;
 }
 
@@ -35,6 +46,8 @@ header {
 
 .navbar_left {
   float: left;
+  width: 50%;
+  text-align: left;
 }
 
 .navbar_left a {
@@ -43,6 +56,8 @@ header {
 
 .navbar_right {
   float: right;
+  text-align: right;
+  width: 50%;
 }
 
 .navbar_right a {
@@ -69,6 +84,8 @@ header {
   top: 70px;
   z-index: 2;
   display: none;
+  background-color: white;
+  text-align: left;
 }
 
 .navbar #signUp {
@@ -85,5 +102,71 @@ header {
 .navbar #signUp:hover {
   color: white;
   background-color: #30488f;
+}
+
+.container_footer {
+  width: 80%;
+  height: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container_footer .container_description {
+  width: 40%;
+  height: 100%;
+}
+
+.container_footer .container_description .description {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container_footer .container_description #logo {
+  width: 50%;
+  height: 50px;
+}
+
+.container_footer .container_description p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container_footer .container_description p a {
+  color: #30488f;
+  text-decoration: none;
+}
+
+.container_footer .container_description p a:hover {
+  text-decoration: underline;
+}
+
+.container_footer .container_list_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 80%;
+  height: 100%;
+}
+
+.container_footer .container_list_link .list-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 15%;
+  margin: 15px;
+}
+
+.container_footer .container_list_link .list-link a {
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.container_footer .container_list_link .list-link:last-child {
+  margin-right: 0;
 }
 

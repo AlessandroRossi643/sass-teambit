@@ -3,24 +3,29 @@
   width: 80%;
   line-height: 90px;
   border-bottom: 1px solid $coloreprincipale_Testi;
+  img{
+    height: 50%;
+    transform: translate(-50%);
+  }
   a{
-    color: $coloreprincipale_Testi;
     text-decoration: none;
 
     &:hover{
       color: $colorehover_Testi;
     }
   }
-
-
   &_left{
     float: left;
+    width: 50%;
+    text-align: left;
     a{
-      font-size: 22px
+      font-size: $dimensione_PrincipaleTesti;
     }
   }
   &_right{
     float: right;
+    text-align: right;
+    width: 50%;
 
     a{
       font-weight: 600;
@@ -31,6 +36,7 @@
       display: inline-block;
       position: relative;
       margin: 0 20px;
+
       &:last-child{
         margin-right: 0;
       }
@@ -43,6 +49,8 @@
         top: 70px;
         z-index: 2;
         display: none;
+        background-color: white;
+        text-align: left;
       }
     }
     #signUp{

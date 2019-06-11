@@ -1,0 +1,60 @@
+.container_footer{
+  width: 80%;
+  height: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .container_description{
+    width: 40%;
+    height: 100%;
+
+    .description{
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+    }
+    #logo{
+      width: 50%;
+      height: 50px;
+    }
+    p{
+      font-weight: 600;
+      font-size: 16px;
+      a{
+        color: $colorehover_Testi;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .container_list_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
+    height: 100%;
+
+    .list-link{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 15%;
+      margin:15px;
+
+      a{
+        text-decoration: none;
+        margin: 20px 0;
+        font-size: $dimensione_LinkFooter;
+        text-align: justify;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
