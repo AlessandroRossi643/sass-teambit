@@ -39,6 +39,8 @@ footer {
   width: 80%;
   line-height: 90px;
   border-bottom: 1px solid #58402c;
+  z-index: 1;
+  background-color: white;
 }
 
 .navbar img {
@@ -173,6 +175,10 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
+}
+
+.positionFixed {
+  position: fixed;
 }
 
 .container_footer {

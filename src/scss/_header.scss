@@ -3,6 +3,9 @@
   width: 80%;
   line-height: 90px;
   border-bottom: 1px solid $coloreprincipale_Testi;
+  z-index: 1;
+  background-color: white;
+
   img{
     height: 50%;
     transform: translateY(5px);
@@ -121,4 +124,8 @@
       width: 90%;
     }
   }
+}
+
+.positionFixed{
+  position: fixed;
 }
